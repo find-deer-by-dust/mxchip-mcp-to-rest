@@ -206,3 +206,8 @@ mcpo 会自动启动工具子进程，无需用户另起进程。实际 HTTP 转
 - [pip 官方安装说明](https://pip.pypa.io/en/stable/installation/)：缺少 pip 时使用官方 `get-pip.py`。
 - [pip 安装参数](https://pip.pypa.io/en/stable/cli/pip_install/)：依赖安装至项目目录的 `--target` 方式。
 - [Docker Compose 安装说明](https://docs.docker.com/compose/install/) / [环境变量插值](https://docs.docker.com/compose/how-tos/environment-variables/variable-interpolation/) / [服务配置](https://docs.docker.com/reference/compose-file/services/)：Compose 安装、`.env` 配置、端口映射和重启策略。
+
+## 许可证
+
+本项目自有代码采用 [MIT License](LICENSE)。
+第三方依赖遵循各自的许可证。

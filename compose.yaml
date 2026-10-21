@@ -1,6 +1,8 @@
 services:
   dehumidifier:
     build: .
+    image: mxchip-mcp-to-rest:latest
+    container_name: mxchip-mcp-to-rest
     init: true
     restart: unless-stopped
     environment:
