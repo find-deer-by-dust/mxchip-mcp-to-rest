@@ -1,0 +1,4 @@
+mcpo==0.0.20
+mcp==1.30.0
+# mcpo 0.0.20 passes FastAPI kwargs rejected by FastAPI 0.146.0.
+fastapi==0.143.5

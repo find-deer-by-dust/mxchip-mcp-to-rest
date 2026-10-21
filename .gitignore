@@ -1,0 +1,14 @@
+__pycache__/
+.packages/
+.env
+.runtime/
+*.py[cod]
+.venv/
+venv/
+python/
+tools/
+config/
+state/
+backups/
+settings.json
+input.json
