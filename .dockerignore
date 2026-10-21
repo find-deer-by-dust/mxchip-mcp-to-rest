@@ -1,0 +1,8 @@
+# Send only the files required to build the runtime image; exclude credentials
+# and local dependency caches even when they exist in the project directory.
+**
+!Dockerfile
+!requirements.txt
+!main.py
+!dehumidifier_mcp.py
+!LICENSE

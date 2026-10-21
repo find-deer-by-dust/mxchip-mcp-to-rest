@@ -1,0 +1,20 @@
+services:
+  dehumidifier:
+    build: .
+    init: true
+    restart: unless-stopped
+    environment:
+      AUTHORIZATION: "${AUTHORIZATION:?Set AUTHORIZATION in .env or the shell environment}"
+      API_KEY: "${API_KEY:-}"
+      HOST: "0.0.0.0"
+      PORT: "8000"
+    ports:
+      - target: 8000
+        published: "${PORT:-8000}"
+        host_ip: "${HOST:-0.0.0.0}"
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8000/dehumidifier/docs', timeout=3).close()"]
+      interval: 30s
+      timeout: 5s
+      start_period: 30s
+      retries: 3
